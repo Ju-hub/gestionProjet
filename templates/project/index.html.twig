@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<h2>Liste de tous les projets</h2>
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success mt-4">
+            {{ message }}
+        </div>
+        {% endfor %}
+{% for project in projects %}
+
+        <div class="mb-2 card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.name }}</h5>
+                <p class="card-text">{{project.description}}</p>
+                <a href="{{ path("app_detail", { id: project.id}) }}" class="btn btn-primary">Détails</a>
+            </div>
+        </div>
+
+{% endfor %}
+
+{% endblock %}

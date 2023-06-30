@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="container">
+    
+    <h1>
+        Création d'une tâche pour le projet {{ project.name }}
+    </h1>
+    <div class="form w-50 mx-auto">
+        {{ form(form) }}    
+    </div>
+</div>
+{% endblock %}
