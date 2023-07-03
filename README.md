@@ -10,23 +10,20 @@ Quelques instructions afin de bien voir le projet.
 
             ⌨ composer install
 
-    3.➡️ Installer les dépendances npm
 
-            ⌨ npm install
-
-    4.➡️ Installer la base de données MySQL. Pour paramétrer la création de votre base de données, rdv dans le fichier .env du projet, et modifier la variable d'environnement selon vos paramètres :
+    3.➡️ Installer la base de données MySQL. Pour paramétrer la création de votre base de données, rdv dans le fichier .env du projet, et modifier la variable d'environnement selon vos paramètres :
 
             DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name"
     
-    5.➡️ Créer la base de données :
+    4.➡️ Créer la base de données :
 
             ⌨ symfony console doctrine:database:create
     
-    6.➡️  Exécuter la migration en base de données :
+    5.➡️  Exécuter la migration en base de données :
 
             ⌨ php bin/console doctrine:migration:migrate
 
-    7.➡️ Lancer le serveur en local
+    6.➡️ Lancer le serveur en local
 
             ⌨ symfony server:start 
 
