@@ -41,9 +41,11 @@
     <tr>
         <td>Statut :  {{ task.status}}</td>
         <td>Deadline :  {{ task.dateend |date('d-m-Y')  }}</td>
-    {% for user in task.userTask %}
-        <td>Equipe :  {{ user.firstName}}</td>
-    {% endfor %}
+        <td>Equipe :  
+            {% for user in task.userTask %}
+                {{ user.firstName}} -
+            {% endfor %}
+        </td>
     </tr>
     {% endfor %}
     
