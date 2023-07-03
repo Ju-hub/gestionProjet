@@ -40,5 +40,5 @@ J'ai utilisé le bundle easyadmin afin d'obtenir plus rapidement un back stylis�
 - Vous pouvez créer une tache directement dans le projet
 
 
-Erreur : lors de la création d'une tache dans un projet l'affectation d'un user ne fonctinne pas (EntityType::class)
+
 

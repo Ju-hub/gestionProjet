@@ -28,7 +28,7 @@
 <div class="mt-5">
     <h3>Tâches à réaliser</h3>
     
-    <table class="table table-hover">
+<table class="table table-hover">
     <thead>
     
     {% for task in project.task %}
@@ -42,13 +42,12 @@
         <td>Statut :  {{ task.status}}</td>
         <td>Deadline :  {{ task.dateend |date('d-m-Y')  }}</td>
     {% for user in task.userTask %}
-        
         <td>Equipe :  {{ user.firstName}}</td>
     {% endfor %}
     </tr>
     {% endfor %}
     
-</tbody>
+    </tbody>
 </table>
         
 

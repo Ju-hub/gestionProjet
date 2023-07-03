@@ -29,7 +29,7 @@ class TasksType extends AbstractType
                 'class' => User::class,
                 'multiple' => true,
                 'expanded' => true,
-                'mapped' => false
+                'mapped' => true    // Mapped true afin d'attribuer un ou plusieurs User à une tache           
                 ])
             ->add('Ajouter', SubmitType::class)
         ;
